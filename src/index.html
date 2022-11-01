@@ -18,8 +18,8 @@
     >
       <fieldset class="fieldset">
         <legend>Personal information</legend>
-        <label class="label" for="surname"
-          >Surname:
+        <label class="label" for="surname">
+          Surname:
           <input
             minlength="1"
             maxlength="50"
@@ -30,8 +30,8 @@
             name="surname"
           >
         </label>
-        <label class="label" for="name"
-          >Name:
+        <label class="label" for="name">
+          Name:
           <input
             minlength="1"
             maxlength="50"
@@ -42,8 +42,8 @@
             name="name"
           >
         </label>
-        <label class="label" for="age"
-          >How old are You?
+        <label class="label" for="age">
+          How old are You?
           <input
             min="12"
             max="100"
@@ -54,8 +54,8 @@
             value="12"
           >
         </label>
-        <label class="label" for="birthdate"
-          >Full date of birth:
+        <label class="label" for="birthdate">
+          Full date of birth:
           <input
             required
             id="birthdate"
@@ -63,8 +63,8 @@
             name="birthdate"
           >
         </label>
-        <label class="label" for="agreement"
-          >I accept the term of the agreement
+        <label class="label" for="agreement">
+          I accept the term of the agreement
           <input
             required
             id="agreement"
@@ -75,8 +75,8 @@
       </fieldset>
       <fieldset class="fieldset">
         <legend>Registration</legend>
-        <label class="label" for="email"
-          >E-mail:
+        <label class="label" for="email">
+          E-mail:
           <input
             required
             id="email"
@@ -85,8 +85,8 @@
             placeholder="email@example.com"
           >
         </label>
-        <label class="label" for="password"
-          >Password:
+        <label class="label" for="password">
+          Password:
           <input
             required
             id="password"
@@ -97,31 +97,36 @@
       </fieldset>
       <fieldset class="fieldset">
         <legend>An interesting fact about you!</legend>
-        <label class="label inlineBlock">Do you love cats?
+        <label class="label inlineBlock">
+          Do you love cats?
           <input
             id="cats-yes"
+            value="yes"
             type="radio"
             name="cats"
           >
           <label class="inlineBlock" for="cats-yes">Yes</label>
           <input
             id="cats-no"
+            value="no"
             type="radio"
             name="cats"
           >
           <label class="inlineBlock" for="cats-no">No</label>
         </label>
-        <label class="label" for="color"
-          >What is your favorite color?
+        <label class="label" for="color">
+          What is your favorite color?
           <input
             id="color"
             type="color"
             name="color"
+            value="#000"
           >
         </label>
-        <label class="label" for="bedtime"
-          >What time do you go to bed?
-          <input id="bedtime"
+        <label class="label" for="bedtime">
+          What time do you go to bed?
+          <input
+            id="bedtime"
             type="time"
             step="1"
             name="bedtime"
@@ -136,13 +141,16 @@
             <option disabled></option>
           </select>
         </label>
-        <label class="label" for="rate"
-          >How do you rate our work?
+        <label class="label" for="rate">
+          How do you rate our work?
           <input
             id="rate"
             type="range"
-            value="0"
             name="rate"
+            min="0"
+            max="1"
+            step="0.01"
+            value="0"
           >
         </label>
       </fieldset>
@@ -153,7 +161,8 @@
           <textarea
             autocomplete="off"
             id="comments"
-            name="comments">
+            name="comments"
+          >
           </textarea>
         </label>
         <label
