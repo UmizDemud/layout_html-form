@@ -2,18 +2,11 @@
 
 .label {
   display: block;
+  margin-bottom: 10px;
 }
 
-.label + .label {
-  margin-top: 10px;
-}
-
-.fieldset + .fieldset {
-  margin-top: 20px;
-}
-
-.submitButton {
-  margin-top: 1rem;
+.fieldset {
+  margin-bottom: 20px;
 }
 
 .inline-block {
